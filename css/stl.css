@@ -1,117 +1,110 @@
-/* this is universal stuff */
 *{
     padding: 0px;
     margin: 0px;
-    box-sizing: border-box;
-}
-body{
-    /* background: linear-gradient(to top, #ca6262de 0%, #beb1e6 75%); */
-    background-image:linear-gradient(to bottom, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(https://images.unsplash.com/photo-1597599354513-e1e8a3c565cb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=600&q=60);
-    display: block;
-    color: rgb(238, 170, 170);
+    color: rgb(255, 255, 255);
+    overflow-x: hidden;
 }
 
-/* this is navigation bar  */
-
+/* navvigation bar */
 .row{
-    width: 100%;
+    /* border: 2px solid red; */
+    background-color: rgb(0, 0, 0,.5);
     position: fixed;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.4);
-
+    width: 100%;
 }
 .logo{
-    height: 30px;
-    width: 30px;
-    margin: 10px;
+    height: 40px;
+    width: 40px;
+    padding: 5px;
+    border-radius: 30px;
     display: block;
     float: left;
     border: 2px solid #77b2d8;
-    border-radius: 34px;
+}
+.main-nav{
+    display: block;
+    /* border: 2px solid red; */
+    list-style: none;
 }
 .main-nav li{
+    
     display: block;
     float: right;
-    list-style: none;
-    text-decoration: none;
-    padding-right: 50px;
-    padding-top: 15px;
+    padding: 18px;
 }
 .main-nav li a{
-    text-transform: uppercase;
     text-decoration: none;
-    color: white;
-
+    text-transform: uppercase;
 }
-.main-nav li a:hover{
-    color: aqua;
-}
-
-.clerfix::after{
-    content:" ";
-    visibility: hidden;
+.row::after{
+    content: " ";
     display: table;
     clear: both;
-    
 }
 
 
+/* maib bpdy star here */
 
-/* boddy start here */
-header{
+.main-body{
+    width: 100%;
     height: 100vh;
+    /* border: 2px solid red; */
+    /* overflow-y: hidden; */
+    background-image: linear-gradient(rgb(0,0,0,.6),rgb(0,0,0,.6)),url(back1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
 }
-.main{
-    width: 707px;
-    left: 0%;
-    transform: translate(20%,60%);
+.content{
+    padding-top: 30vh;
+    padding-left: 20vh;
 }
-.main h1{
-    color: #6032e9;
-    margin: 10px 0px;
+
+.content p,h1,a{
     text-transform: uppercase;
-    font-size: 45px;
-}
-.main p{
-    font-size: 30px;
-    margin: 10px 0px;
-    text-transform: uppercase;
-    color: rgb(4, 92, 119);
-}
-.btn{
-    padding :5px;
+    margin: 15px;
     text-decoration: none;
-    border: 2px solid rgb(130 110 212);
-    margin-top: 10px;
-    background-color: #3a97e0;
-    border-radius: 15px;
 }
-.btn:hover{
-    color: aqua;
+.content h1{
+    text-transform: uppercase;
+    margin: 15px;
+    text-decoration: none;
 }
-.me{
-    height: 170px;
-    width: 145px;
-    transform: translate(555%,-40%);
-    border: 29px;
-    border-radius: 9px;
-    z-index: -1;
-
+.content a{
+    text-transform: uppercase;
+    margin: 15px;
+    text-decoration: none;
+}
+.content img{
+    height: 175px;
+    width: 160px;
+    margin: 15px;
+}
+.one{
+    display: block;
+    float: left;
+    width: 20%;
+}
+.two{
+    display: block;
+    float: righr;
+    width: 40%;
 }
 
 
 
+/* fotter start here */
 
-/* this if footer  */
 .upper{
     background-color: rgb(0, 0, 0);
     width: 100%;
-    height: 200px;
+    height: 35vh;
 }
 .bottom{
     background-color: rgb(0 0 0 / 86%);
     width: 100%;
-    height: 50px;
+    height: 10vh;
 }
 .bottom p{
     color:rgb(240 145 28);;
@@ -121,7 +114,7 @@ header{
 }
 .upper .first{
     width: 73%;
-    height: 200px;
+    height: 35vh;
     display: block;
     float: left;
     /* border: 2px solid red; */
@@ -129,7 +122,7 @@ header{
 .upper .sec{
     display: block;
     width: 27%;
-    height: 200px;
+    height: 35vh;
     /* border: 2px solid red; */
     float: right;
 }
@@ -154,11 +147,11 @@ header{
     color: white;
 }
 .imgs{
-    margin-left: 40px;
+    margin-left: 22px;
     width: 20px;
     height: 20px;
     /* background-color: white; */
 }
-.two{
+.imgtwo{
     margin-left: 10px;
 }
