@@ -19,7 +19,7 @@
     border-radius: 30px;
     display: block;
     float: left;
-    border: 2px solid #a6d877;
+    border: 2px solid #d89277;
 }
 .main-nav{
     display: block;
@@ -96,15 +96,11 @@
 
 /* fotter start here */
 
-.upper{
-    background-color: rgb(0, 0, 0);
-    width: 100%;
-    height: 200px;
-}
+/* bottom copyright */
 .bottom{
     background-color: rgb(0 0 0 / 86%);
     width: 100%;
-    height: 50px;
+    height: 10vh;
 }
 .bottom p{
     color:rgb(240 145 28);;
@@ -112,26 +108,21 @@
     font-size: 25px;
     padding: 10px 0px;
 }
+
+/* fotter content */
+
+/* social media link */
+.upper{
+    background-color: rgb(0, 0, 0);
+    width: 100%;
+    height: 35vh;
+}
 .upper .first{
     width: 73%;
-    height: 200px;
+    height: 35vh;
     display: block;
     float: left;
     /* border: 2px solid red; */
-}
-.upper .sec{
-    display: block;
-    width: 27%;
-    height: 200px;
-    /* border: 2px solid red; */
-    float: right;
-}
-.form,h2{
-    margin-left: 40px;
-}
-.sec h2{
-    margin-top: 7px;
-
 }
 #name,#mess{    
     margin-top: 12px;
@@ -154,4 +145,20 @@
 }
 .imgtwo{
     margin-left: 10px;
+}
+
+/* message box */
+.upper .sec{
+    display: block;
+    width: 27%;
+    height: 35vh;
+    /* border: 2px solid red; */
+    float: right;
+}
+.form,h2{
+    margin-left: 40px;
+}
+.sec h2{
+    margin-top: 7px;
+
 }
